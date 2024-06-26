@@ -33,10 +33,10 @@ module.exports = {
     }
   ]
 };
-module.exports = {
-  "rules": {
-    "no-trailing-spaces": ["error", { "skipBlankLines": false }],
-  },
-  "extends": "eslint:recommended",
+//module.exports = {
+  //"rules": {
+    //"no-trailing-spaces": ["error", { "skipBlankLines": false }],
+  //},
+  //"extends": "eslint:recommended",
   // other configurations
-};
+//};

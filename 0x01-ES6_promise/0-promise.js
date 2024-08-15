@@ -1,13 +1,14 @@
-export default function getResponseFromAPI() {
-  return new Promise((resolve, reject) => {
-      // Simulate an asynchronous operation (e.g., fetching data from an API)
-      setTimeout(() => {
-          const success = true; // Simulate success/failure
-          if (success) {
-              resolve('API response');
-          } else {
-              reject('Error fetching API response');
-          }
-      }, 1000); // Simulate delay
-  });
-}
+export default function getFullResponseFromAPI(success) {
+    return new Promise((resolve, reject) => {
+      if (success) {
+        resolve({
+          status: 200,
+          body: 'Success',
+        });
+      } else {
+        reject(new Error(
+          'The fake API is not working currently',
+        ));
+      }
+    });
+  }
